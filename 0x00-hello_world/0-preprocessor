@@ -1,0 +1,8 @@
+#include <stduio.h>
+
+int main(void) 
+{
+    printf("Hello world!\x0a");
+
+    return 0;
+}
