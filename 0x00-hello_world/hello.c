@@ -1,8 +1,7 @@
 #include <stdio.h>
 
-int main() 
+int main(void) 
 {
-	printf("Hello world");
-
-	return 0;	
+    printf("\x48\x65\x6c\x6c\x6f\x20\x77\x6f\x72\x6c\x64");
+    return 0;
 }
