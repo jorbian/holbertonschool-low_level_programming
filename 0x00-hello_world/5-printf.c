@@ -2,6 +2,6 @@
 /* This is a descriptor for the main function */
 int main()                                                                                                                                                                                                                                                      
 {                                                                                                                                                                                                                                                               
-        printf("with proper grammar, but the outcome is a piece of art,\n");                                                                                                                     
-        return 0;                                                                                                                                                                                                     
+\tprintf("with proper grammar, but the outcome is a piece of art,\n");                                                                                                                     
+\treturn 0;                                                                                                                                                                                                     
 }
