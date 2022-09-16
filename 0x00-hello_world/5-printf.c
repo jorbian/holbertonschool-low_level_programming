@@ -4,11 +4,11 @@
  * @void: I don't know why this is supposed to be neccessary but the
  * style validator's word is law!! This is how cargo cult programming begins
  * 
- * return: 0 again, look up the definition of 'cargo cult programming' in the 
+ * Return: 0 again, look up the definition of 'cargo cult programming' in the 
  * Jargon file!!
  */
 int main(void)                                                                                                            
 {                                                                                                                                                                                                                                                  
     printf("with proper grammar, but the outcome is a piece of art,\n");                                                                                                                     
-    return 0;                                                                                              
+    return (0);                                                                                              
 }
