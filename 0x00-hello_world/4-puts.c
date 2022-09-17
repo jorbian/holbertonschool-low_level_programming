@@ -1,10 +1,10 @@
 #include <stdio.h>
-/** main - this is a description of the main function
+/* main - this is a description of the main function
 * @void main takes no arguyments. I have no idea why it would  ever actually
 * need to.
-* 
+*
 * return: 0 I have no idea when or if main would ever return anything other
-* than 
+* than
 */
 int main(void)
 {
