@@ -4,7 +4,7 @@
 * @void main takes no arguyments. I have no idea why it would  ever actually
 * need to.
 *
-* return: 0 I have no idea when or if main would ever return anything other
+* Return: 0 I have no idea when or if main would ever return anything other
 * than
 */
 int main(void)
