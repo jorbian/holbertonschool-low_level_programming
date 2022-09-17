@@ -1,4 +1,4 @@
-#include <stdio.h>                                                                                                                                                                                                                                            
+#include <stdio.h>
 /** 
  * main - This is a descriptor of the main function
  * @void: I don't know why this is supposed to be neccessary but the
