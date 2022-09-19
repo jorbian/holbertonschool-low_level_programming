@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <stdio.h>
 /**
 * main - The ritually descriptor
@@ -8,9 +7,12 @@
 */
 int main(void)
 {
-	char i, j;
-	for (i = "a"; i <= "z"; i++)
-		putchar(i);
+	char ch;
+
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
+	for (ch = 'A'; ch <= 'Z'; ch++)
+		putchar(ch);
 	putchar("\x0a");
 
 	return (0);
