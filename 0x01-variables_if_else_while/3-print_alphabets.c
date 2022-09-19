@@ -10,11 +10,12 @@ int main(void)
 {
 	int a_modifier = 32;
 	int value_of_a;
+	int i, j;
 
-	for (int j = 0; j > -2; j--)
+	for (j = 0; j > -2; j--)
 	{
 		value_of_a = 97 + (a_modifier * j);
-		for (int i = 0; i < 26; i++)
+		for (i = 0; i < 26; i++)
 			putchar(value_of_a + i);
 	}
 
