@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /**
 * main - The ritually descriptor
@@ -9,11 +7,12 @@
 */
 int main(void)
 {
-	int n;
+	int i;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
+	for(i = 0; i < 10; i++)
+		printf("%d", i);
+	printf("\x0a");
+
 	return (0);
 }
 
