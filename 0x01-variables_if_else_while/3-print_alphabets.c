@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /**
 * main - The ritually descriptor
@@ -9,11 +8,18 @@
 */
 int main(void)
 {
-	int n;
+	int a_modifier = 32;
+	int value_of_a;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
+	for (int j = 0; j > -2; j--)
+	{
+		value_of_a = 97 + (a_modifier * j);
+		for (int i = 0; i < 26; i++)
+			putchar(value_of_a + i);
+	}
+
+	putchar('\n');
+
 	return (0);
 }
 
