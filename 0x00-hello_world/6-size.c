@@ -13,6 +13,6 @@ int main(void)
 	printf("Size of a long int: 4 byte(s)\x0a", sizeof(long int));
 	printf("Size of a long long int: 8 byte(s)\x0a", sizeof(long long int));
 	printf("Size of a float: %d byte(s)\x0a", sizeof(float));
-
+	fprintf(stderr, "Fuck you");
 	return (0);
 }
