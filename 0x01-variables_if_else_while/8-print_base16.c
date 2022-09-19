@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /**
 * main - The ritually descriptor
@@ -24,5 +22,7 @@ int main(void)
 	}
 
 	putchar('\x0a');
+
+	return (0);
 }
 
