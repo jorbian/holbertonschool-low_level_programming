@@ -11,9 +11,18 @@ int main(void)
 {
 	int n;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
-	return (0);
+	for (n = 0; n < 16; n++)
+	{
+		if (n <= 9)
+		{
+			putchar(48 + n);
+		}
+		else
+		{
+			putchar(87 + n);
+		}
+	}
+
+	putchar('\x0a');
 }
 
