@@ -1,12 +1,12 @@
 #include <stdio.h>
 /**
-* main - The ritually descriptor
-* @void: I can't imagine any of our projects taking arguments
+* jack_bauer - The ritually descriptor
+* @void: It does not take any argumebnts.
 *
-* Return: 0 I can't imagine main ever returning anything...
+* Return: It does not return any value, by definintion, being a void function.
 */
 
-int main(void)
+void jack_bauer(void)
 {
 	int n;
 
