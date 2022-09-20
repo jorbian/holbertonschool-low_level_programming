@@ -1,14 +1,12 @@
-#include <stdio.h>
+#include <stdlib.h>
 /**
-* main - The ritually descriptor
-* @void: I can't imagine any of our projects taking arguments
+* _abs - they didn't say we couldn't do this
+* @n: I can't imagine any of our projects taking arguments
 *
-* Return: 0 I can't imagine main ever returning anything...
+* Return: sda-fadf
 */
 
-int main(void)
+int _abs(int n)
 {
-	int n;
-
-	return (0);
+	return (abs(n));
 }
