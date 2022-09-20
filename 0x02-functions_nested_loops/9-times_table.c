@@ -19,6 +19,8 @@ void times_table(void)
 		{
 			printf(" %d,", (i * j));
 		}
-		printf('\x08$\x0a');
+		putchar('\x08');
+		putchar('$');
+		putchar('\x0a');
 	}
 }
