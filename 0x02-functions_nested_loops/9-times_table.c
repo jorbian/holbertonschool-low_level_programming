@@ -14,10 +14,11 @@ void times_table(void)
 
 	for (i = start; i <= max; i++)
 	{
-		for (j = start; j <= max; j++)
+		printf("0,");
+		for (j = start + 1; j <= max; j++)
 		{
 			printf(" %d,", (i * j));
 		}
-		printf('\x08\x0a');
+		printf('\x08$\x0a');
 	}
 }
