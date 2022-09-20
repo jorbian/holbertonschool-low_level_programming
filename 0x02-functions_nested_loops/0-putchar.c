@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int n;
+	printf("\x5f\x70\x75\x74\x63\x68\x61\x72\x0a");
 
 	return (0);
 }
