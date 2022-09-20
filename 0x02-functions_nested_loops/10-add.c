@@ -1,14 +1,15 @@
 #include <stdio.h>
 /**
-* main - The ritually descriptor
-* @void: I can't imagine any of our projects taking arguments
+* add - The one that adds two numbers together
+* @x: an i(n)teger. any i(n)teger you wantses
+* @y: an i(n)teger. any i(n)teger you wantses
 *
-* Return: 0 I can't imagine main ever returning anything...
+* Return: z the sum of xes and yses
 */
 
-int main(void)
+int add(int x, int y)
 {
-	int n;
+	int z = x + y;
 
-	return (0);
+	return (z);
 }
