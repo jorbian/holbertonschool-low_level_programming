@@ -16,6 +16,6 @@ void print_alphabet_x10(void)
 		{
 			_putchar(n);
 		};
+		_putchar('\x0a');
 	}
-	_putchar('\x0a');
 }
