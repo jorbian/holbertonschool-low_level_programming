@@ -12,5 +12,6 @@
 int _putchar(char c);
 void display_message(void);
 void print_alphabet(void);
+void print_alphabet_x10(void);
 
 #endif 
