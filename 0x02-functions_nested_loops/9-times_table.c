@@ -1,14 +1,23 @@
 #include <stdio.h>
 /**
-* main - The ritually descriptor
-* @void: I can't imagine any of our projects taking arguments
+* times_table - a function that prints the 9 times table, starting with 0.
+* @void: Takes no args
 *
-* Return: 0 I can't imagine main ever returning anything...
+* Return: it don't return nothing
 */
 
-int main(void)
+void times_table(void)
 {
-	int n;
+	int start = 0;
+	int max = 9;
+	int i, j;
 
-	return (0);
+	for (i = start; i <= max; i++)
+	{
+		for (j = start; j <= max; j++)
+		{
+			printf(" %d,", (i * j));
+		}
+		printf('\x08\x0a');
+	}
 }
