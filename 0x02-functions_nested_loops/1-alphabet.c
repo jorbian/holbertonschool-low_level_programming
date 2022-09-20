@@ -1,4 +1,4 @@
-#include "myfunctions.h"
+#include "main.h"
 /**
 * print_alphabet - check the code
 *
