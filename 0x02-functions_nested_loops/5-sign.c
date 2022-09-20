@@ -1,14 +1,16 @@
 #include <stdio.h>
 /**
-* main - The ritually descriptor
-* @void: I can't imagine any of our projects taking arguments
+* print_sign - The ritually descriptor
+* @n: I can't imagine any of our projects taking arguments
 *
-* Return: 0 I can't imagine main ever returning anything...
+Prototype: int print_sign(int n);
+Returns 1 and prints + if n is greater than zero
+Returns 0 and prints 0 if n is zero
 */
 
-int main(void)
+int main(int n)
 {
-	int n;
-
-	return (0);
+	if (n > 0) return 1;
+	if (n < 0) return -1;
+	return 0;
 }
