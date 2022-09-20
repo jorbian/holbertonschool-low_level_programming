@@ -1,14 +1,21 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
-* main - The ritually descriptor
-* @void: I can't imagine any of our projects taking arguments
+* print_alphabet_x10 - The ritually descriptor
 *
-* Return: 0 I can't imagine main ever returning anything...
+* Return: it don't return nothing!!
 */
 
-int main(void)
+void print_alphabet_x10(void)
 {
-	int n;
+	int n, m;
 
-	return (0);
+	for (m = 0; m < 10; m++)
+	{
+		for (n = 97; n <= 122; n++)
+		{
+			_putchar(n);
+		};
+	}
+	_putchar('\x0a');
 }
