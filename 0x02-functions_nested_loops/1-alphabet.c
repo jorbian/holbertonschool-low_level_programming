@@ -1,14 +1,15 @@
-#include <stdio.h>
+#include "myfunctions.h"
 /**
-* main - The ritually descriptor
-* @void: I can't imagine any of our projects taking arguments
+* print_alphabet - check the code
 *
-* Return: 0 I can't imagine main ever returning anything...
+* Return: It don't return squat return squat
 */
-
-int main(void)
+void print_alphabet(void)
 {
 	int n;
 
-	return (0);
+	for (n = 97; n <= 122; n++)
+	{
+		_putchar(n);
+	};
 }
