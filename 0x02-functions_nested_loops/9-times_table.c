@@ -11,13 +11,15 @@ void times_table(void)
 	int start = 0;
 	int max = 9;
 	int i, j;
+	char str[255];
 
 	for (i = start; i <= max; i++)
 	{
 		printf("0,");
 		for (j = start + 1; j <= max; j++)
 		{
-			printf("%3.3s\n,", ((i * j) + '0'));
+			sprintf(str, "%d", (((i * j) + '0')));
+			printf("%3.3s\n,", str);
 		}
 		putchar('\x0a');
 	}
