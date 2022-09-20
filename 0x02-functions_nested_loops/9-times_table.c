@@ -18,7 +18,7 @@ void times_table(void)
 		printf("0,");
 		for (j = start + 1; j <= max; j++)
 		{
-			sprintf(str, "%d", (((i * j) + '0')));
+			sprintf(str, "%d", (i * j));
 			printf("%3.3s,", str);
 		}
 		putchar('\x0a');
