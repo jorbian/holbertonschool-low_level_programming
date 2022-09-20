@@ -19,9 +19,11 @@ void times_table(void)
 		for (j = start + 1; j <= max; j++)
 		{
 			sprintf(str, "%d", (i * j));
-			printf("%3.3s,", str);
+			printf("%3.3s", str);
+
+			if (i != max)
+				putchar(',');
 		}
-		putchar('\b');
 		putchar('\x0a');
 	}
 }
