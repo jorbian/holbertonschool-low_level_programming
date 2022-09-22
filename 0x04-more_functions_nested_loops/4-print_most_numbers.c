@@ -13,7 +13,7 @@ void print_most_numbers(void)
 	for (ch = '1'; ch <= '9'; ch++)
 	{
 		if ((ch != '2') && (ch != '4'))
-            _putchar(ch);
+			_putchar(ch);
 	}
 	_putchar('\x0a');
 }
