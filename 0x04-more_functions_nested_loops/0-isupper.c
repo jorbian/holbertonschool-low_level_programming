@@ -8,7 +8,7 @@
 */
 int _isupper(char ch)
 {
-	if ((ch >= 65) && (ch <= 122))
+	if ((ch >= 65) && (ch <= 90))
 		return (1);
 	else
 		return (0);
