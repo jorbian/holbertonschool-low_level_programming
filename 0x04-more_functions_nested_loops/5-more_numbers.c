@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*  print_most_numbers - check the code
+*  more_numbers - check the code
 *
 * Return: Is void and doesn't return anythinbg
 */
@@ -22,7 +22,7 @@ void more_numbers(void)
 			{
 				_putchar('1' + (i % 10));
 			}
-        }
+	}
 		_putchar('\x0a');
 	}
-}	
+}
