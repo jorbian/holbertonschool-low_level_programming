@@ -28,7 +28,7 @@ int main(void)
 		}
 		putchar(' ');
 	}
-	putchar('\x0a')
+	putchar('\x0a');
 
 	return (0);
 }
