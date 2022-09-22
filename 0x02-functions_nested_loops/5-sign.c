@@ -12,11 +12,13 @@ int print_sign(int n)
 
 	if (n > 0)
 	{
-		result = "+1";
+		strcpy(result, "+1" );
+		return result;
 	};
 	if (n < 0) 
 	{
-		result = "-1";
+		strcpy(result, "-1" );
+		return result;
 	}
 	return 0;
 }
