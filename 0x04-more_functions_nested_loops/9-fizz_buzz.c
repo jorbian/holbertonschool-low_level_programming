@@ -15,15 +15,15 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (!((i % f1.num == 0) || (i % f2.num == 0))) 
+		if (!((i % f1.num == 0) || (i % f2.num == 0)))
 		{
 			printf("%d", i);
 		}
 		else
 		{
-			if (i % f1.num == 0) 
+			if (i % f1.num == 0)
 				printf("%s", f1.word_to_say);
-			if (i % f2.num == 0) 
+			if (i % f2.num == 0)
 				printf("%s", f2.word_to_say);
 		}
 		putchar(' ');
