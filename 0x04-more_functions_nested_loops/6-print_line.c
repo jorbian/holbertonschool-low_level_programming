@@ -18,4 +18,4 @@ void print_line(int n)
 		_putchar(char_to_print);
 	}
 	_putchar('\x0a');
-}             
+}
