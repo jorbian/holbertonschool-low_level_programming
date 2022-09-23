@@ -13,8 +13,12 @@ void print_diagonal(int n)
 	char char_to_print = '\\';
 	int i;
 
-	for (i = 0; i < n; i++)
+	if (n > 0) 
 	{
+		for (i = 0; i < n; i++)
+		{
+			_putchar(' ');
+		}
 		_putchar(char_to_print);
 	}
 	_putchar('\x0a');
