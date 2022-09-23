@@ -10,7 +10,6 @@
 
 void print_square(int size)
 {
-	char cell = '#';
 	int row;
 	int column;
 
@@ -20,6 +19,7 @@ void print_square(int size)
 		{
 			_putchar('#');
 		}
+		_putchar('\x0a');
 	}
 }
 
