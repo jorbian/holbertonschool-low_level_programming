@@ -9,7 +9,7 @@
 void more_numbers(void)
 {
 	int i, j;
-	char line[22] = "01234567891011121314\x0a";
+	char line[22] = "01234567891011121314\x32\x0a";
 
 	for (i = 1; i <= 10; i++)
 	{
