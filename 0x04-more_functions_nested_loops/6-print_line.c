@@ -10,12 +10,12 @@
 
 void print_line(int n)
 {
-    char char_to_print = '_';
-    int i;
+	char char_to_print = '_';
+	int i;
 
-    for (i = 0; i < n; i++)
-    {
-        _putchar(char_to_print);
-    }
-    _putchar('\x0a');
+	for (i = 0; i < n; i++)
+	{
+		_putchar(char_to_print);
+	}
+	_putchar('\x0a');
 }             
