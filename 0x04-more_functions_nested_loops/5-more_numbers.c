@@ -9,20 +9,14 @@
 void more_numbers(void)
 {
 	int i, j;
+	char line[22] = "01234567891011121314\x0a";
 
-	for (j = 0; j < 10; j++)
+	for (i = 0; i < 10; i++)
 	{
-		for (i = 0; i <= 14; i++)
+		for (j = 0; j <= 22; j++)
 		{
-			if (i < 10)
-			{
-				_putchar(i);
-			}
-			else
-			{
-				_putchar('1' + (i % 10));
-			}
-	}
-		_putchar('\x0a');
+			putchar(line[j]);
+		}
 	}
 }
+
