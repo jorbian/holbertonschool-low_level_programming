@@ -14,7 +14,7 @@ void print_square(int size)
 	int row;
 	int column;
 
-	for (rows = 0; rows < size; rows++)
+	for (row = 0; row < size; row++)
 	{
 		for (column = 0; column < size; column++)
 		{
