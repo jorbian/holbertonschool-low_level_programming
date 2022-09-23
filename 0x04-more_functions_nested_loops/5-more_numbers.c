@@ -15,7 +15,7 @@ void more_numbers(void)
 	{
 		for (j = 0; j <= 22; j++)
 		{
-			putchar(line[j]);
+			_putchar(line[j]);
 		}
 	}
 }
