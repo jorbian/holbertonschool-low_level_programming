@@ -18,9 +18,10 @@ void puts_half(char *str)
 		y++;
 		length++;
 	}
+	
 	if (length % 2 != 0)
 		modifier = 1;
-	n = ((length - modifier) / 2) - 1;
+	n = ((length - modifier) / 2);
 
 	do {
 		_putchar(str[n]);
