@@ -1,29 +1,28 @@
+
 #include <stdio.h>
-
+#include "main.h"
 /**
- * puts_half - a shameless ripoff of knrs verion of this function
- * @str: pointer to zeroeth character in array
- *
- * Return: does not return anytrhing
+ *puts_half - update value.
+ *@str: value to be evaluate.
+ *Return: not.
  */
-
 void puts_half(char *str)
 {
-	char *length_of_string = str;
-	int adjustment = 0;
-	int i, x;
+	int length = 0;
+	int modifier = 0;
+	char *y = str;
+	int n;
 
-	while (*length_of_string != '\0')
-		length_of_string++;
-	length_of_string = (length_of_string - str);
-
-	if (length_of_string % 2 != 0)
-		adjustment = 1;
-	x = (length_of_the_string - adjustment) / 2;
-
-	for (i = 0; i < x; i++)
+	while (*y != '\0')
 	{
-		putchar(*str);
-		str++;
+		y++;
+		length++;
 	}
+	if (length % 2 != 0)
+		modifier = 1;
+	n = ((length - modifier) / 2);
+
+	for ( ; n < length ; n++)
+		_putchar(str[n]);
+	_putchar('\x0a');
 }
