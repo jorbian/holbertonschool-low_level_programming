@@ -19,11 +19,11 @@ void puts_half(char *str)
 
 	if (length % 2 != 0)
 		modifier = 1;
-	n = ((length + modifier) / 2);
+	n = ((length - modifier) / 2);
 
 	do {
 		_putchar(str[n]);
 		 n++;
 	} while (n < length - 1);
-	_putchar('\x0a'); 
+	_putchar('\x0a');
 }
