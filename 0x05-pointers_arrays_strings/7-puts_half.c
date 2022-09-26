@@ -1,29 +1,28 @@
 #include "main.h"
 /**
- *puts_half - update value.
- *@str: value to be evaluate.
- *Return: not.
- */
+* puts_half - function
+* Description: print the second half of string
+* @str: char pointer
+* Return: nothing
+*/
 void puts_half(char *str)
 {
-	int length = 0;
+	int numchar;
 	int modifier = 0;
-	char *y = str;
-	int n;
+	int i;
 
-	while (*y != '\0')
+	numchar = 0;
+	while (*(str + numchar) != '\0')
 	{
-		y++;
-		length++;
+		numchar++;
 	}
 
-	if (length % 2 != 0)
+	if (numchar % 2 != 0)
 		modifier = 1;
-	n = ((length + modifier) / 2);
 
-	do {
-		n++;
-		_putchar(*(str + n));
-	} while (n < length - 1);
-	_putchar('\x0a');
+	for (i = ((numchar - modifier) / 2) + 1; i < numchar; i++)
+	{
+		_putchar(*(str + i));
+	}
+	_putchar('\n');
 }
