@@ -20,18 +20,4 @@ void puts_half(char *str);
 void print_array(int *a, int n);
 char *_strcpy(char *dest, char *src);
 
-void rev_string(char *s)
-{
-	int i, temp;
-	int length = strlen(s);
-
-	for (i = 0; (i < length / 2); i++)
-	{
-		temp = s[i];
-		s[i] = s[length - i - 1];
-		s[length - i - 1] = temp;
-	}
-}
-
-
 #endif
