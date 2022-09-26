@@ -23,7 +23,7 @@ void puts_half(char *str)
 
 	do {
 		n++;
-		_putchar(str[n]);
+		_putchar(*(str + n));
 	} while (n < length - 1);
 	_putchar('\x0a');
 }
