@@ -9,7 +9,7 @@ void print_rev(char *s)
 {
     char *pointer; 
     rev_string(s);
-    *pointer = s;
+    pointer = s;
 
     while (*pointer++ != '\0') 
         _putchar(*pointer); 
