@@ -17,7 +17,7 @@ void puts_half(char *str)
 		numchar++;
 	}
 
-	if (numchar % 2 != 0)
+	if (numchar % 2 == 0)
 		modifier = 1;
 
 	for (i = ((numchar - modifier) / 2) + 1; i < numchar; i++)
