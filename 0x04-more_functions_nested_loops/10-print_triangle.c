@@ -1,11 +1,11 @@
 #include "main.h"
-
 /**
-  * print_triangle - pojdfakjsodakhjf 
-  * @size: Tasdfghj asdfghjk asdfghj asdfghj wertghj sdfghj asdfg sdf sdfg sdf?
-  *
-  * Return: empty
-  */
+* print_triangle - there is no trailing whitespace
+* @size: Tasdfghj asdfghjk asdfghj asdfghj wertghj sdfghj asdfg sdf sdfg
+*
+* Return: empty
+*/
+
 void print_triangle(int size)
 {
 	int i, j, k;
@@ -32,3 +32,4 @@ void print_triangle(int size)
 		}
 	}
 }
+
