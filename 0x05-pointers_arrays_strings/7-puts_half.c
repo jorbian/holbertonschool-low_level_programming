@@ -24,6 +24,6 @@ void puts_half(char *str)
 	do {
 		_putchar(str[n]);
 		 n++;
-	} while (n < length);
-	_putchar('\x0a');
+	} while (n < (length - 1));
+	_putchar('\x0a'); 
 }
