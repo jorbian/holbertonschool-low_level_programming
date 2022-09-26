@@ -1,25 +1,24 @@
-#include "main.h"
+#include <stdio.h>
 
-/**
-*  print_diagonal - check the code
-* @n: an integer representing the number of times the character
-* is to be printed.
+/** 
+* print_diagonoal - asdf 
+* @size: a;skldfhja;lksdhjf
 *
-* Return: Is void and doesn't return anythinbg
+* Return: it don't return shit
 */
-
-void print_diagonal(int n)
+void print_diagonal(int size)
 {
-	char char_to_print = '\\';
-	int i;
+	int i, j;
 
-	if (n > 0)
+	for (i = 0; i < i; i++)
 	{
-		for (i = 0; i < n; i++)
+		for (j = 0; j < i; j++) 
 		{
 			_putchar(' ');
 		}
-		_putchar(char_to_print);
+		_putchar(92);
+		if (i < (n - 1))
+			_putchar('\x0a');
 	}
 	_putchar('\x0a');
 }
