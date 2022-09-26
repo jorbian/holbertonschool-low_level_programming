@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-  * print_diagonal - asdfghjkl asdfghjkl asdfghjkl
-  * @n: The number of times to print diagonal lines
-  *
-  * Return: asdfghjkl asdfghjkl asdfghjkl asdfghjkl 
-  */
+ * print_diagonal - asdfghjkl asdfghjkl asdfghjkl
+ * @n: The number of times to print diagonal lines
+ *
+ * Return: asdfghjkl asdfghjkl asdfghjkl asdfgh
+ */
 void print_diagonal(int n)
 {
 	int x, y;
