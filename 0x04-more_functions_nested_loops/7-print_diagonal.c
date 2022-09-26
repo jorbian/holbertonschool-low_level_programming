@@ -1,24 +1,30 @@
-#include <stdio.h>
+#include "main.h"
 
-/** 
-* print_diagonoal - asdf 
-* @size: a;skldfhja;lksdhjf
-*
-* Return: it don't return shit
-*/
-void print_diagonal(int size)
+/**
+  * print_diagonal - asdfghjkl asdfghjkl asdfghjkl
+  * @n: The number of times to print diagonal lines
+  *
+  * Return: asdfghjkl asdfghjkl asdfghjkl asdfghjkl 
+  */
+void print_diagonal(int n)
 {
-	int i, j;
+	int x, y;
 
-	for (i = 0; i < i; i++)
+	if (n <= 0)
 	{
-		for (j = 0; j < i; j++) 
-		{
-			_putchar(' ');
-		}
-		_putchar(92);
-		if (i < (n - 1))
-			_putchar('\x0a');
+		_putchar('\x0a');
 	}
-	_putchar('\x0a');
+	else
+	{
+		for (x = 0; x < n; x++)
+		{
+			for (y = 0; y < x; y++)
+			{
+				_putchar(' ');
+			}
+
+			_putchar('\\');
+			_putchar('\x0a');
+		}
+	}
 }
