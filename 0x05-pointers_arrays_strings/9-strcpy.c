@@ -14,6 +14,5 @@ char* _strcpy(char *dest, char *src)
 
     while ((*src++ = *dest++) != '\0') 
         ;
-    return (&unnecessary_retrurn_value);
+    return (*dest);
 }
-// Just come back to it later...
