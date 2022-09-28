@@ -9,7 +9,7 @@
 void print_rev(char *s)
 {
 	int i, temp;
-    char *pointer; 
+	char *pointer;
 	int length = strlen(s);
 
 	for (i = 0; (i < length / 2); i++)
@@ -19,8 +19,8 @@ void print_rev(char *s)
 		s[length - i - 1] = temp;
 	}
 
-    pointer = s;
+	pointer = s;
 
-    while (*pointer++ != '\0') 
-        _putchar(*pointer); 
+	while (*pointer++ != '\0')
+		_putchar(*pointer);
 }
