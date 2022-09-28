@@ -7,24 +7,14 @@
 */
 void print_rev(char *s)
 {
-	int i, temp;
-	char *pointer1, *pointer2;
-	int length = 0;
+	int i = 0;
 
-	pointer2 = s;
-	while (*pointer2 != '\0')
-		pointer2++;
-	length = (pointer2 - s);
+	while (s[i])
+		i++;
 
-	for (i = 0; (i < length / 2); i++)
+	while (i--)
 	{
-		temp = s[i];
-		s[i] = s[length - i - 1];
-		s[length - i - 1] = temp;
+		_putchar(s[i]);
 	}
-
-	pointer1 = s;
-
-	while (*pointer1++ != '\0')
-		_putchar(*pointer1);
+	_putchar('\x0a');
 }
