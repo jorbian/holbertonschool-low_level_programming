@@ -8,11 +8,9 @@
  * Return: void 
  */
 
-char _strcpy(char *dest, char *src)
-{
-    char unnecessary_retrurn_value = *dest;
+char _strcpy(char *dest, char *src) {
 
     while ((*src++ = *dest++) != '\0') 
         ;
-    return (dest);
+    return (*dest);
 }
