@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 /**
 * print_rev - function
 * Description: reverse the string
@@ -9,8 +8,13 @@
 void print_rev(char *s)
 {
 	int i, temp;
-	char *pointer;
-	int length = strlen(s);
+	char *pointer1, *pointer2;
+	int length = 0;
+
+	char *pointer2 = s;
+	while (*pointer2 != '\0')
+		pointer2++;
+	length = (pointer2 - s);
 
 	for (i = 0; (i < length / 2); i++)
 	{
@@ -19,8 +23,8 @@ void print_rev(char *s)
 		s[length - i - 1] = temp;
 	}
 
-	pointer = s;
+	pointer1 = s;
 
-	while (*pointer++ != '\0')
-		_putchar(*pointer);
+	while (*pointer1++ != '\0')
+		_putchar(*pointer1);
 }
