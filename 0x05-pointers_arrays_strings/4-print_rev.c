@@ -11,7 +11,7 @@ void print_rev(char *s)
 	char *pointer1, *pointer2;
 	int length = 0;
 
-	char *pointer2 = s;
+	*pointer2 = s;
 	while (*pointer2 != '\0')
 		pointer2++;
 	length = (pointer2 - s);
