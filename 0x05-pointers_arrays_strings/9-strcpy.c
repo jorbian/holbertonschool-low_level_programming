@@ -1,18 +1,24 @@
-#include <stdio.h>
-
+#include<stdio.h>
+#include "main.h"
 /**
- * *_strcpy - a shameless ripoff of knrs verion of this function
- * @dest: pointer to zeroeth character in destination
- * @src: pointer to zeroeth character in source
- *
- * Return: void 
+ *_strcpy - update value.
+ *@dest: value to be evaluate.
+ *@src: value to be evaluate.
+ *Return: not.
  */
+char *_strcpy(char *dest, char *src)
+{
+	int length = 0;
+	int index = 0;
 
-char _strcpy(char *dest, char *src) {
-
-    char *temp = *dest; 
-
-    while ((*src++ = *temp++) != '\0') 
-        ;
-    return (*temp);
+	while (*(src + length) != '\0')
+	{
+		length++;
+	}
+	for ( ; index < length ; index++)
+	{
+		dest[index] = src[index];
+	}
+	dest[length] = '\0';
+	return (dest);
 }
