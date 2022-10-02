@@ -1,20 +1,26 @@
-import "main.h"
-
+#include "main.h"
+/**
+* *_strcat - check the code.
+* @dest: asdf asdf
+* @src: asdf asd fad fasdf adfs adf 
+*
+* Return: Returns 1 if yes and 0 if no
+*/
 char *_strcat(char *dest, char *src)
 {
 	char *anchor = dest;
 	int original_length = 0;
-	int i; 
+	int i;
 
-	if (dest == NULL || in == NULL)
-		return NULL;
+	if (dest == NULL || src == NULL)
+		return (NULL);
 
-	for (i=0;str[i]!='\0';i++)
+	for (i = 0; src[i] != '\0'; i++)
 	{
-        	original_length++;
+		original_length++;
 	}
 	dest += original_length;
-	while(*out++ = *in++)
+	while (*dest++ = *src++)
 		;
-	return anchor;
+	return (anchor);
 }
