@@ -12,9 +12,6 @@ char *_strcat(char *dest, char *src)
 	int original_length = 0;
 	int i;
 
-	if (dest == NULL || src == NULL)
-		return (NULL);
-
 	for (i = 0; src[i] != '\0'; i++)
 	{
 		original_length++;
