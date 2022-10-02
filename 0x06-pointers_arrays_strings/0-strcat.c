@@ -2,7 +2,7 @@
 /**
 * *_strcat - check the code.
 * @dest: asdf asdf
-* @src: asdf asd fad fasdf adfs adf 
+* @src: asdf asd fad fasdf adfs adf
 *
 * Return: Returns 1 if yes and 0 if no
 */
