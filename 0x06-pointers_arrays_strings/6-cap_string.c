@@ -25,7 +25,7 @@ char *cap_string(char *s)
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		if (i = 0 && *(s + i) >= '\x61' && *(s + i) <= '\x7a')
+		if (i == 0 && *(s + i) >= '\x61' && *(s + i) <= '\x7a')
 			*(s + i) -= 32;
 
 		for (j = 0; j < 13; j++)
@@ -36,7 +36,6 @@ char *cap_string(char *s)
 						*(s + (i + 1)) <= '\x7a')
 					*(s + (i + 1)) -= 32;
 			}
-				
 		}
 	}
 
