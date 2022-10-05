@@ -7,7 +7,7 @@
 * Desc: Header containing declarations for all functions used in the
 * 0x07-pointers_arrays_strings project thing
 */
-char *_memset(char *s, char b, int n);
+void *_memset(void *s, int c, unsigned int n);
 char *_memcpy(char *dest, char *src, unsigned int n);
 char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
