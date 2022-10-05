@@ -9,7 +9,7 @@ char *cap_string(char *s)
 {
 	int i, j;
 
-	char special_chars[13] = {
+	char special_chars[255] = {
 		'\x09',
 		'\x0a', /* newline */
 		'\x0d', /* carriage return */
