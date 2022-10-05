@@ -10,7 +10,7 @@ char *cap_string(char *s)
 	int i, j;
 
 	char special_chars[13] = {
-		'\x09', 
+		'\x09',
 		'\x0a', /* newline */
 		'\x0d', /* carriage return */
 		'\x22', /* double quotes */
@@ -20,7 +20,7 @@ char *cap_string(char *s)
 		'\x2e', /* full stop */
 		'\x3f', /* question mark */
 		'\x7b', /* open bracket */
-		'\x7d'  
+		'\x7d'
 	};
 
 	for (i = 0; *(s + i) != '\0'; i++)
