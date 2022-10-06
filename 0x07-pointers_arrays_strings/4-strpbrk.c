@@ -14,7 +14,7 @@ char *_strpbrk(char *string, char *accepted_bytes)
 	while (string[address1])
 	{
 		address2 = 0;
-		
+
 		while (accepted_bytes[address2])
 		{
 			if (string[address1] == accepted_bytes[address2])
