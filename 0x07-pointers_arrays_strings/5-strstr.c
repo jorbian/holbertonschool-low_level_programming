@@ -27,6 +27,6 @@ char *_strstr(char *source_string, char *sub_string)
 		address[1]++;
 	}
 
-	return ('\0');
+	return (source_string);
 }
 
