@@ -5,7 +5,7 @@
 * @c: chracter we're looking for
 *
 * Return: string from char found
-*/ 
+*/
 char *_strchr(char *s, char c)
 {
 	int i = 0;
