@@ -12,7 +12,7 @@ unsigned int _strspn(char *string, char *accept)
 	unsigned int address2;
 	unsigned int place = 0;
 
-	while (*(accept + address))
+	while (*(accept + address1))
 	{
 		address2 = 0;
 
@@ -20,7 +20,7 @@ unsigned int _strspn(char *string, char *accept)
 		{
 			if (*(accept + address1) == *(string + address2))
 				place++;
-			address2++
+			address2++;
 		}
 
 		address1++;
