@@ -27,5 +27,6 @@ char *_strpbrk(char *string, char *accepted_bytes)
 
 		address1++;
 	}
-	return ('\x00');
+
+	return (string);
 }
