@@ -1,23 +1,20 @@
 #include "main.h"
 /**
-* factorial - adf asdf asdf asdf
-* @n: asd fasdf asdf asdf sda fadsf adfs
+* _pow_recursion - adf asdf asdf asdf
+* @x: asd fasdf asdf asdf sda fadsf adfs
+* @y: asd fasdf asdf asdf sda fadsf adfs
 *
 * Return: asdf asdf asdf asdf
 */
-int factorial(int n)
+int _pow_recursion(int x, int y)
 {
-	if ((n == 1) || (n == 0))
-	{
-		return (1);
-	}
-	else if (n < 0)
+	if (y < 0)
 	{
 		return (-1);
 	}
 	else
 	{
-		return (n * factorial(n - 1));
+		return (x * _pow_recursion(x, y - 1));
 	}
 }
 
