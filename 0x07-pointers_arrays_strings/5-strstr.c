@@ -12,7 +12,7 @@ char *_strstr(char *source_string, char *sub_string)
 
 	while (source_string[address[0]])
 	{
-		while (needle[address[1]])
+		while (sub_string[address[1]])
 		{
 			if (source_string[address[0] + address[1]] !=
 				sub_string[address[1]])
@@ -27,6 +27,6 @@ char *_strstr(char *source_string, char *sub_string)
 		address[1]++;
 	}
 
-	return (source_string);
+	return ("\0");
 }
 
