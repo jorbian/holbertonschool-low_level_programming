@@ -14,4 +14,3 @@ void _puts_recursion(char *string)
 	_putchar(string);
 	_puts_recursion(string + 1);
 }
-
