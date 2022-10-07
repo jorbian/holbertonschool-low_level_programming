@@ -1,24 +1,16 @@
-#include <unistd.h>
 #include "main.h"
-
 /**
-* _puts_recursion - adf asdf asdf asdf
-* @string: asd fasdf asdf asdf sda fadsf adfs
-*
-* Return: asdf asdf asdf asdf
-*/
-void _puts_recursion(char *string)
+* _puts_recursion - prints a string, followed by a new line
+* @s: pointer to string
+* Return: nothing
+**/
+void _puts_recursion(char *s)
 {
-	if (*string)
-	{
-		_putchar(string);
-		_puts_recursion(string + 1);
-	}
-	else
+	if (*s == '\0')
 	{
 		_putchar('\n');
 		return;
 	}
+	_putchar(*s);
+	_puts_recursion(s + 1);
 }
-
-
