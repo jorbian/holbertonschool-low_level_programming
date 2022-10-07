@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-* factorial - adf asdf asdf asdf
-* @n: asd fasdf asdf asdf sda fadsf adfs
+* _strlen_recursion - adf asdf asdf asdf
+* @s: asd fasdf asdf asdf sda fadsf adfs
 *
 * Return: asdf asdf asdf asdf
 */
-int factorial(int n)
+int _strlen_recursion(char *s)
 {
 	if ((n == 1) || (n == 0))
 	{
