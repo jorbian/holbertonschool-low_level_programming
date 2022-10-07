@@ -9,20 +9,16 @@
 */
 void _puts_recursion(char *string)
 {
-	if (*string != '\x00')
+	if (*string)
+	{
 		_putchar(*string);
-		_puts_recursion(*string + 1);
+		_puts_recursion(string + 1);
+	}
+	else
+	{
+		_putchar('\n');
+		return;
+	}
 }
 
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
 

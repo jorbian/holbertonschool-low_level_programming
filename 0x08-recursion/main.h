@@ -8,7 +8,7 @@
 * 0x05-pointers_arrays_strings project thing
 */
 void _putchar(char *character);
-void _puts_recursion(char *string)
+void _puts_recursion(char *string);
 void _print_rev_recursion(char *string);
 int _strlen_recursion(char *string);
 int factorial(int n);
