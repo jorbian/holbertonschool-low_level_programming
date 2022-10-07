@@ -4,13 +4,13 @@
 * @s: pointer to string
 * Return: nothing
 **/
-void _puts_recursion(char *s)
+void _puts_recursion(char *string)
 {
-	if (*s == '\0')
+	if (*string == '\0')
 	{
 		_putchar('\n');
 		return;
 	}
-	_putchar(*s);
-	_puts_recursion(s + 1);
+	_putchar(*string);
+	_puts_recursion(string + 1);
 }
