@@ -6,10 +6,10 @@
 **/
 void _puts_recursion(char *string)
 {
-	if (*string == '\0')
+	if (string == '\0')
 	{
 		return;
 	}
-	_putchar(*string);
+	_putchar(string);
 	_puts_recursion(string + 1);
 }
