@@ -1,23 +1,30 @@
 #include "main.h"
+#include <math.h>
+
 /**
-* factorial - adf asdf asdf asdf
+* _sqrt_recursion - adf asdf asdf asdf
 * @n: asd fasdf asdf asdf sda fadsf adfs
 *
 * Return: asdf asdf asdf asdf
 */
-int factorial(int n)
+int _sqrt_recursion(int n)
 {
-	if ((n == 1) || (n == 0))
-	{
-		return (1);
-	}
-	else if (n < 0)
-	{
-		return (-1);
-	}
-	else
-	{
-		return (n * factorial(n - 1));
-	}
+	double x = (double)n;
+
+	return ((int)((test(x, 1.0))));
 }
 
+/**
+* test - adf asdf asdf asdf
+* @test: asd fasdf asdf asdf sda fadsf adfs
+* @guess: asd fasdf asdf asdf sda fadsf adfs
+*
+* Return: asdf asdf asdf asdf
+*/
+int test(double number, double guess)
+{
+	if (fabs(number - guess) < .001)
+		return (guess);
+	else
+		return (test(number, ((guess + number / guess) / 2)));
+}
