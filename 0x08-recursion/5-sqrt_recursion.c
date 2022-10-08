@@ -16,7 +16,7 @@ int _sqrt_recursion(int n)
 
 /**
 * test - adf asdf asdf asdf
-* @test: asd fasdf asdf asdf sda fadsf adfs
+* @number: asd fasdf asdf asdf sda fadsf adfs
 * @guess: asd fasdf asdf asdf sda fadsf adfs
 *
 * Return: asdf asdf asdf asdf
