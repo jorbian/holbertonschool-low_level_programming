@@ -3,10 +3,11 @@
  * main - ads f
  * @argc: number of arguments
  * @argv: arguments
- * 
+ *
  * Return: zero
  */
 int main(int argc, char **argv)
 {
-	printf("%s", argv[0]);
+	if (argc)
+		printf("%s", argv[0]);
 }
