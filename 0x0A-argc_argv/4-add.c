@@ -6,9 +6,10 @@
  *
  * Return: zero
  */
-int main(int argc, char __attribute__((__unused__)) *argv[])
+int main(int argc, char *argv[])
 {
-	printf("%d\n", (argc - 1));
+	int i, accum;
 
-	return (0);
+	for (i = 0; i < argc; i++)
+
 }
