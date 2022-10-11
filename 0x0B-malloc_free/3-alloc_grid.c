@@ -38,5 +38,5 @@ int **alloc_grid(int width, int height)
 			pointer[i][j] = 0;
 	}
 
-    return (pointer);
+	return (pointer);
 }
