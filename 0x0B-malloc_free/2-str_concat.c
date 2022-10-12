@@ -26,6 +26,8 @@ char *str_concat(char *string1, char *string2)
 
 	size_buffer = (len_of_string1 + len_of_string2) + 1;
 	pointer = malloc(size_buffer * sizeof(char));
+	if (!(pointer))
+		return (NULL);
 
 	for (i = 0; i < size_buffer; i++)
 		i < len_of_string1 ?
