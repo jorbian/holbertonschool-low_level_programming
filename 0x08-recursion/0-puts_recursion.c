@@ -11,6 +11,6 @@ void _puts_recursion(char *string)
 		_putchar('\n');
 		return;
 	}
-	_putchar(string);
+	_putchar(*string);
 	_puts_recursion(string + 1);
 }
