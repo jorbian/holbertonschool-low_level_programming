@@ -1,12 +1,17 @@
 #include "main.h"
 /**
- * _strdup -  a function that returns a pointer to a newly allocated space in
- * memory, which contains a copy of the string given as a parameter.
- * @str: the string to be copied into newly allocated space.
+ * free_grid -  a function that frees a 2 dimensional grid previously created
+ * the alloc_grid function.
+ * @grid: the string to be copied into newly allocated space.
+ * @height: the height of the space.
  *
- * Return: a pointer to the first byte of the copy of the given string.
+ * Return: Void.
  */
-char *_strdup(char *str)
+void free_grid(int **grid, int height)
 {
+	int i;
 
+	for (i = 0; i < height; i++)
+		free(grid[i]);
+	free(grid);
 }
