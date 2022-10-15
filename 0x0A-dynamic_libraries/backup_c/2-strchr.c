@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
 * _strchr - locate a character in string
 * @s: a string
@@ -23,5 +24,5 @@ char *_strchr(char *s, char c)
 		}
 	}
 
-	return ('\x00');
+	return (NULL);
 }

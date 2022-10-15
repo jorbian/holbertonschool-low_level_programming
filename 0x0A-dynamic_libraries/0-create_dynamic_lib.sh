@@ -4,6 +4,7 @@ filename=libdynamic.so
 
 gcc -c -fPIC *.c
 gcc -shared -o $filename *.o
+rm *.o
 
 if [ -f $filename ]; then 
     rm *.c 

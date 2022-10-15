@@ -5,7 +5,7 @@
 * @n: an integer
 * return: stuff
 */
-char *_strncat(char *dest, char *src, in n)
+char *_strncat(char *dest, char *src, int n)
 {
 	char *string;
 
