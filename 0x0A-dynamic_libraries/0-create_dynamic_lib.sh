@@ -3,7 +3,7 @@
 filename=libdynamic.so
 
 gcc -fPIC -c *.c
-gcc -shared -o $filename *.o
+gcc -dynamiclib -o $filename *.o
 
 rm *.o
 
