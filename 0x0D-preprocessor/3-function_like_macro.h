@@ -1,5 +1,5 @@
-#ifndef FUNCTION_LIKE_MACRO_H
-#define FUNCTION_LIKE_MACRO_H
+#ifndef 3-FUNCTION_LIKE_MACRO_H
+#define 3-FUNCTION_LIKE_MACRO_H
 
 #define ABS(n) ((n) * ((n>0) - (n<0)))
 
