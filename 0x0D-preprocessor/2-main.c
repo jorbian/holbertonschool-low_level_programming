@@ -9,7 +9,7 @@
 int main(int argc, char ** argv)
 {
 	if (argc)
-		printf("%s", argv[0]);
+		printf("%s\x0a", argv[0]);
 	
 	return 0;
 }
