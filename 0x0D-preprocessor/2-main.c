@@ -9,5 +9,5 @@ int main(void)
 {
 	printf("%s\x0a", __FILE__);
 	
-	return 0;
+	return (0);
 }
