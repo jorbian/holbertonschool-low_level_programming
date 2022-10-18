@@ -1,15 +1,13 @@
 #include <stdio.h>
 /**
  * main - 'function to print the name of the program
- * @argc: the number of arguments
- * @argv: array containing the arguments
+ * @void: it takes not arguments
  *
  * Return: 0
 **/
-int main(int argc, char ** argv)
+int main(void)
 {
-	if (argc)
-		printf("%s\x0a", argv[0]);
+	printf("%s\x0a", __FILE__);
 	
 	return 0;
 }
