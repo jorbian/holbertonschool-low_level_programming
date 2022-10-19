@@ -1,49 +1,31 @@
 #include <stdlib.h>
+
 /**
-* string_nconcat - asdf asdf asd f
-* @s1: asdf as
-* @s2: asdf asdf adsf
-* @n: adf adsf asdf
+* string_ncat - function that concatenates two strings
+* @string1: input string 1
+* @string2: input string 2
+* @num_bytes: first bytes into string2
 *
-* Return: adsf adf sadfs
+* Return: character pointer to new string
 */
-char *string_nconcat(char *s1, char *s2, unsigned int n)
+char *string_nconcat(char *string1, char *string2, unsigned int num_bytes)
 {
-	int i = 0;
-	int j = 0;
-	int k = 0;
+	char *new_string;
+	char *empty_string = "";
+	unsigned int i = 0;
+	unsigned int j = 0;
 
-	char *s3;
-	
-	while (s1[i] != '\x00')
+	if (!string1)
+		string1 = empty_string;
+	if (!string2)
+		string2 = empty_string;
+
+	while (string1[i])
 		i++;
-
-	while (n > 0)
-	{
-		i++;
-		n--;
-	}
-
-	s3 = malloc(sizeof(char) * i);
-	if (!s3)
-		return (NULL);
-
-	while (s1[j])
-	{
-		s3[j] = s1[j];
+	while (string2[j])
 		j++;
-		i--;
-	}
+	j++;
 
-	while (i)
-	{
-		s3[j] = s2[k];
-		j++;
-		i--;
-		k++;
-	}
-
-	s3[j] = '\x00';
-
-	return (s3);
+	if (num_bytes >= j)
+		num_bytes = j;
 }
