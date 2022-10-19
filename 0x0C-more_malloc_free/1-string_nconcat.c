@@ -34,7 +34,7 @@ char *string_nconcat(char *string1, char *string2, unsigned int num_bytes)
 		return (NULL);
 
 	for (i = 0; string1[i] != '\x00'; i++)
-		new_string[i] = string[i];
+		new_string[i] = string1[i];
 	for (j = 0; string2[j] != '\x00'; j++)
 		new_string[i] = string2[j];
 		i++;
