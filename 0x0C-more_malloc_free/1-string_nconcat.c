@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 /**
-* string_ncat - function that concatenates two strings
+* string_nconcat - function that concatenates two strings
 * @string1: input string 1
 * @string2: input string 2
 * @num_bytes: first bytes into string2
@@ -33,11 +33,20 @@ char *string_nconcat(char *string1, char *string2, unsigned int num_bytes)
 	if (!new_string)
 		return (NULL);
 
-	for (i = 0; string1[i] != '\x00'; i++)
+	i = 0;
+	while (string1[i])
+	{
 		new_string[i] = string1[i];
-	for (j = 0; string2[j] != '\x00'; j++)
+		i++;
+	}
+
+	j = 0;
+	while (string2[j])
+	{
 		new_string[i] = string2[j];
 		i++;
+		j++;
+	}
 	new_string[i] = '\x00';
 
 	return (new_string);
