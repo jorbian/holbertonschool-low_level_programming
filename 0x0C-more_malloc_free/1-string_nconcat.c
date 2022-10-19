@@ -28,4 +28,17 @@ char *string_nconcat(char *string1, char *string2, unsigned int num_bytes)
 
 	if (num_bytes >= j)
 		num_bytes = j;
+
+	new_string = (malloc(sizeof(*new_string) * num_bytes + (i + 1));
+	if (!new_string)
+		return (NULL);
+
+	for (i = 0; string1[i] != '\x00'; i++)
+		new_string[i] = string[i];
+	for (j = 0; string2[j] != '\x00'; j++)
+		new_string[i] = string2[j];
+		i++;
+	new_string[i] = '\x00';
+
+	return (new_string);
 }
