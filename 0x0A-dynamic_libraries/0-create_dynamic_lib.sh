@@ -2,13 +2,13 @@
 
 filename=libdynamic.so
 
-gcc -fPIC -c *.c
-gcc -dynamiclib -o $filename *.o
+gcc -c -fPIC *.c
+gcc -shared *.o -o $filename
 
 rm *.o
 
 if [ -f $filename ]; then 
-    rm *.c 
+    rm *.c
     echo "LIBRARY '$filename' HAS BEEN CREATED."
 else
     echo "SOMETHING WENT WRONG..."
