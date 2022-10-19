@@ -1,13 +1,20 @@
 #include <stdlib.h>
-
+/**
+* string_nconcat - asdf asdf asd f
+* @s1: asdf as
+* @s2: asdf asdf adsf
+* @n: adf adsf asdf
+*
+* Return: adsf adf sadfs
+*/
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	int i = 0;
 	int j = 0;
 	int k = 0;
-;
-	char *s3;
 
+	char *s3;
+	
 	while (s1[i] != '\x00')
 		i++;
 
