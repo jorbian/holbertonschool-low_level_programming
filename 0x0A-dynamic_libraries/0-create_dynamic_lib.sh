@@ -1,6 +1,6 @@
 #!/bin/bash
 
-filename=libdynamic.so
+filename=liball.so
 
 gcc -c -fPIC *.c
 gcc -shared *.o -o $filename
