@@ -1,5 +1,4 @@
 #include "dog.h"
-#include "main.h"
 
 /**
  * init_dog - constructor method for the object dog
