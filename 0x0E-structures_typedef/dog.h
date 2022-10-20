@@ -1,5 +1,11 @@
 #ifndef DOG_H
 #define DOG_H
+/*
+* File: dog.h - blah blah blah
+* Auth: Jonathan Boller
+* Desc: Pointless ritual description
+* blah blah blah
+*/
 
 /**
  * struct dog - asdf asdf adsf
@@ -18,7 +24,9 @@ struct dog
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
-/* dog_t *new_dog(char *name, float age, char *owner);
-void free_dog(dog_t *d); */
+/**
+ * dog_t *new_dog(char *name, float age, char *owner);
+ *void free_dog(dog_t *d);
+*/
 
 #endif
