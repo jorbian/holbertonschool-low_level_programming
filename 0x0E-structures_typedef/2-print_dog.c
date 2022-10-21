@@ -17,7 +17,7 @@ void print_dog(struct dog *d)
 			printf(" (nil)\x0a");
 
 		printf("Age:");
-		if (d->age > 0)
+		if (d->age != d->age)
 			printf(" %f\x0a", d->age);
 		else
 			printf(" (nil)\x0a");
