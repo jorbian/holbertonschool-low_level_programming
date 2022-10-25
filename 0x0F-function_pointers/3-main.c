@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	if ((argc != 4) || (argv[2][1]) || !operation)
 	{
 		printf("Error\x0a");
-		return (0);
+		exit(99);
 	}
 
 	printf("%d\x0a", operation(first_term, second_term));
