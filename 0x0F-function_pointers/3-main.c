@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "function_pointers.h"
-
+#include "3-calc.h"
 /**
 * main - simple calculator programme to demonstrate the use of func pointerss
 * @argc: number of arguments fed to program
