@@ -1,29 +1,27 @@
-#include "dog.h"
 #include <stdlib.h>
+#include <stdio.h>
+#include "dog.h"
 
 /**
- * new_dog - constructor method for the object dog
- * @name: where we're going to put its name
- * @age: the dogs age as a float
- * @owner: pointer to where we're going to not its owner.
- *
- * Return: the new dog
-*/
+ * new_dog - asdf asdf
+ * @name: name
+ * @age: age
+ * @owner: owner
+ * Return: 0
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new_dog;
-	int i;
+	dog_t *new_dog_info;
+	char *copy_name, *copy_owner;
+	unsigned int x, name_length = 0, owner_length = 0;
 
-	int name_length = 0;
-	int owner_length = 0;
-
-	new_dog = malloc(sizeof(dog_t));
-	if (!new_dog)
+	new_dog_info = malloc(sizeof(dog_t));
+	if (!new_dog_info)
 		return (NULL);
 
-	if (!name || age <= 0 || !owner)
+	if (!name || age <= 0 || owner == NULL)
 	{
-		free(new_dog);
+		free(new_dog_info);
 		return (NULL);
 	}
 
@@ -32,19 +30,23 @@ dog_t *new_dog(char *name, float age, char *owner)
 	while (owner[owner_length++])
 		;
 
-	new_dog->name = malloc(name_length * sizeof(new_dog->name));
-	if (!new_dog)
+	copy_name = malloc(sizeof(char) * (name_length + 1));
+	if (!copy_name)
 		return (NULL);
-	for (i = 0; i < name_length; i++)
-		new_dog->name[i] = name[i];
 
-	new_dog->age = age;
-
-	new_dog->owner = malloc(owner_length * sizeof(new_dog->owner));
-	if (!new_dog)
+	copy_owner = malloc(sizeof(char) * (owner_length + 1));
+	if (!copy_owner)
 		return (NULL);
-	for (i = 0; i < owner_length; i++)
-		new_dog->owner[i] = owner[i];
 
-	return (new_dog);
+	for (x = 0; x <= name_length; x++)
+		copy_name[x] = name[x];
+
+	for (x = 0; x <= owner_length; x++)
+		copy_owner[x] = owner[x];
+
+	new_dog_info->name = copy_name;
+	new_dog_info->owner = copy_owner;
+	new_dog_info->age = age;
+
+	return (new_dog_info);
 }
