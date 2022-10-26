@@ -19,8 +19,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		printf("Error\n");
-		exit(98);
+		exit_code = 98;
 	}
 
 	first_term = atoi(argv[1]);
