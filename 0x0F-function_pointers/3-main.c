@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	second_term = atoi(argv[3]);
 	get_op = argv[2];
 
-	if (!get_op_func(argv[2]) || argv[2][1]
+	if (!get_op_func(argv[2]) || argv[2][1])
 	{
 		exit_code = 99;
 	}
