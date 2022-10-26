@@ -18,9 +18,7 @@ int main(int argc, char *argv[])
 	char *get_op;
 
 	if (argc != 4)
-	{
 		exit_code = 98;
-	}
 
 	first_term = atoi(argv[1]);
 	second_term = atoi(argv[3]);
