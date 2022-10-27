@@ -88,21 +88,23 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(arguments, format);
-    i = 0;
+	i = 0;
 	seperator = "";
-    while (format && format[i])
-    {
-        j = 0;
-        while (j <  4 && format[i] != *(s[j].symbol))
-            j++;
-        if (j < 4)
-        {
-            printf("%s", seperator);
-            s[j].ptr(arguments);
-            seperator = ", ";
-        }
-        i++;
-    }
+	while (format && format[i])
+	{
+		j = 0;
+		while (j <  4 && format[i] != *(s[j].symbol))
+			j++;
+
+		if (j < 4)
+		{
+			printf("%s", seperator);
+			s[j].ptr(arguments);
+			seperator = ", ";
+		}
+
+		i++;
+	}
 	va_end(arguments);
 
 	printf("\x0a");
