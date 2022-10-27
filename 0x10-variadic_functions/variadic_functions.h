@@ -8,7 +8,7 @@
 typedef struct print
 {
 	char *symbol;
-	void (*ptr) (va_list(arg));
+	void (*pointer) (va_list(arguments));
 } print_s;
 
 int sum_them_all(const unsigned int n, ...);

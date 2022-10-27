@@ -99,7 +99,7 @@ void print_all(const char * const format, ...)
 		if (j < 4)
 		{
 			printf("%s", seperator);
-			s[j].ptr(arguments);
+			s[j].pointer(arguments);
 			seperator = ", ";
 		}
 
