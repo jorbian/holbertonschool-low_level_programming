@@ -1,6 +1,4 @@
 #include "lists.h"
-#include <string.h>
-
 /**
 * add_node - add a node to a singly linked list
 * @head: double pointer to the thing at the head of the list
@@ -15,7 +13,7 @@ list_t *add_node(list_t **head, const char *string)
 	list_t *new_element;
 
 	*new_element = malloc(sizeof(list_t));
-	if (!new)
+	if (!new_element)
 		return (NULL);
 
 	duplicate = strdup(string);
@@ -29,7 +27,7 @@ list_t *add_node(list_t **head, const char *string)
 		length_of_string;
 
 	new_element->string = duplicate;
-        new_element->length = length;
+        new_element->length = length_of_string;
         new_element->next = *head;
 
 	*head = new_element;
