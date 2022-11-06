@@ -27,8 +27,8 @@ list_t *add_node(list_t **head, const char *string)
 		length_of_string;
 
 	new_element->string = duplicate;
-        new_element->length = length_of_string;
-        new_element->next = *head;
+    new_element->length = length_of_string;
+    new_element->next = *head;
 
 	*head = new_element;
 
