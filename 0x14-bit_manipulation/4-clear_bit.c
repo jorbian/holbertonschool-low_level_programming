@@ -9,7 +9,7 @@
 */
 int clear_bit(unsigned long int *number, unsigned int index)
 {
-	if (index > {sizdof(unsigned long int) * 8}}
+	if (index > (sizeof(unsigned long int) * 8))
 		return (-1);
 
 	*number &= ~(1 << index);
