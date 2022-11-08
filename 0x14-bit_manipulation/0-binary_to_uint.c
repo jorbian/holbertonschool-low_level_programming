@@ -25,6 +25,7 @@ unsigned int binary_to_uint(const char *binary)
 	{
 		if (binary[index] == '1')
 			number += power;
+		index--;
 		power *= 2;
 	}
 
