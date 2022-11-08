@@ -5,7 +5,7 @@
 * @number: number to check
 * @index: index of number
 *
-* Return: Value or -1 if error 
+* Return: Value or -1 if error
 */
 int get_bit(unsigned long int number, unsigned int index)
 {
