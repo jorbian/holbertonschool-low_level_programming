@@ -5,7 +5,7 @@
 * @number: number to perform opperation
 * @index: index of bit within number
 *
-* Return: 1 sucess or -1 if error 
+* Return: 1 sucess or -1 if error
 */
 int clear_bit(unsigned long int *number, unsigned int index)
 {
