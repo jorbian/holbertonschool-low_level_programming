@@ -6,28 +6,22 @@
  */
 unsigned int binary_to_uint(const char *binary)
 {
-	unsigned int number = 0;
-	int index = 0;
-	int power = 1;
+	unsigned int number;
+	unsigned int index;
+	unsigned int ret_value = 0;
 
 	if (!binary)
 		return (0);
 
-	while (binary[index])
+	for (index = 0; binary[index]; index++)
+		;
+	for (number = 1; index > 0; index--, number *= 2)
 	{
-		if (binary[index] != '0' && binary[index] != '1')
+		if (!(binary[index - 1] == '0' || binary[index - 1] == '1'))
 			return (0);
-		index++;
-	}
-	index--;
-
-	while (index >= 0)
-	{
-		if (binary[index] == '1')
-			number += power;
-		index--;
-		power *= 2;
+		ret_value += (binary[index - 1] - '0') * number;
 	}
 
-	return (number);
+	return (ret_value);
 }
+
