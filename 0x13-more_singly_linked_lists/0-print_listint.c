@@ -1,19 +1,20 @@
 #include "lists.h"
 
 /**
-* listint_len - print number of elements
-* @h: const int pointer
+* print_listint - print number elements in linked list
+* @h: consts printer
 *
-* Return: number of elements
+* Return: number of nodes
 */
-size_t listint_len(const listint_t *h)
+size_t print_listint(const listint_t *h)
 {
-	unsigned int c = 0;
+	int c = 0;
 
 	while (h)
 	{
-		h = h->next;
+		printf("%d\x0a", h->n);
 		c++;
+		h = h->next;
 	}
 
 	return (c);
