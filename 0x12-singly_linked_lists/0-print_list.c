@@ -15,10 +15,10 @@ size_t print_list(const list_t *h)
 
 	while (h)
 	{
-		if (!h->string)
+		if (!h->str)
 			printf("[0] (nil)\x0a");
 		else
-			printf("[%d] %s\x0a", h->length, h->string);
+			printf("[%d] %s\x0a", h->len, h->str);
 		h = h->next;
 		i++;
 	}
