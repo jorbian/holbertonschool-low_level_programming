@@ -9,17 +9,15 @@
 */
 unsigned int flip_bits(unsigned long int num1, unsigned long int num2)
 {
-	unsigned int i = 0;
-	unsigned int x;
+	unsigned long int bits = 0;
+	unsigned long int xor = num1 ^ num2;
 
-	x = num1 ^ num2;
-	while (x)
+	while (xor > 0)
 	{
-		if ((x & 1) == 1)
-			i++;
-		x = x >> 1;
+		bits += (xor & 1);
+		xor >>= 1;
 	}
 
-	return (i);
+	return (bits);;
 }
 
