@@ -6,7 +6,7 @@
 *
 * Return: Null if function fails but otherwise new element
 */
-list_t *add_node(list_t **head, const char *string)
+list_t *add_node(list_t **head, const char *str)
 {
 	char *duplicate;
 	int length_of_string;
@@ -16,18 +16,18 @@ list_t *add_node(list_t **head, const char *string)
 	if (!new_element)
 		return (NULL);
 
-	duplicate = strdup(string);
+	duplicate = strdup(str);
 	if (!duplicate)
 	{
 		free(new_element);
 		return (NULL);
 	}
 
-	for (length_of_string = 0; string[length_of_string];)
+	for (length_of_string = 0; str[length_of_string];)
 		length_of_string;
 
-	new_element->string = duplicate;
-    new_element->length = length_of_string;
+	new_element->str = duplicate;
+    new_element->len = length_of_string;
     new_element->next = *head;
 
 	*head = new_element;

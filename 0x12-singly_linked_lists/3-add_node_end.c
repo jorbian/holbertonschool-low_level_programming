@@ -3,11 +3,11 @@
 /**
  * add_node_end - Add node to the end of a list_t list.
  * @head: Pointer to  head of the list.
- * @string: String to be added to list.
+ * @str: String to be added to list.
  *
  * Return: New node unless it fails
  */
-list_t *add_node_end(list_t **head, const char *string)
+list_t *add_node_end(list_t **head, const char *str)
 {
 	char *duplicate_string;
 	int length;
@@ -17,18 +17,18 @@ list_t *add_node_end(list_t **head, const char *string)
 	if (!new_node)
 		return (NULL);
 
-	duplicate_string = strdup(string);
-	if (!string)
+	duplicate_string = strdup(str);
+	if (!str)
 	{
 		free(new_node);
 		return (NULL);
 	}
 
-	for (length = 0; string[length];)
+	for (length = 0; str[length];)
 		length++;
 
-	new_node->string = duplicate_string;
-	new_node->length = length;
+	new_node->str = duplicate_string;
+	new_node->len = length;
 	new_node->next = NULL;
 
 	if (!*head)
