@@ -18,6 +18,6 @@ unsigned int flip_bits(unsigned long int num1, unsigned long int num2)
 		xor >>= 1;
 	}
 
-	return (bits);;
+	return (bits);
 }
 
