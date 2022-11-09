@@ -24,7 +24,7 @@ list_t *add_node(list_t **head, const char *str)
 	}
 
 	for (length_of_string = 0; str[length_of_string];)
-		length_of_string;
+		length_of_string++;
 
 	new_element->str = duplicate;
     new_element->len = length_of_string;
