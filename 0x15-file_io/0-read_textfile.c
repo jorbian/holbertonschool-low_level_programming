@@ -1,10 +1,5 @@
 #include "main.h"
 
-#define O_RDONLY 00
-#define O_WRONLY 01
-#define O_RDWR 02
-#define STDOUT_FILENO 00
-
 /**
  * read_textfile - Reads a text file and print to POSIX stdout.
  * @filename: Pointer to name of the file.
