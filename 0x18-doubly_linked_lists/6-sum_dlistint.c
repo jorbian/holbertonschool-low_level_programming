@@ -32,4 +32,3 @@ int sum_dlistint(dlistint_t *head)
 {
 	return (recursive_sum(head, 0));
 }
-
