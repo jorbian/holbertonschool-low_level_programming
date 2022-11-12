@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
-* dlistint_t *add_dnodeint(dlistint_t **head, const int n)
+* add_dnodeint - add node to end of linked list
 * @head: pointer to the head of doubly linked list
 * @n: integer for the new node to contain
 *
@@ -24,4 +24,3 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 
 	return (new);
 }
-
