@@ -14,7 +14,7 @@ void free_dlistint(dlistint_t *head)
 	{
 		placeholder = head->next;
 		free(head);
-		head = placeholder
+		head = placeholder;
 	}
 }
 
