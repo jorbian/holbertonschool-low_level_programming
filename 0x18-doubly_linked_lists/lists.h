@@ -27,6 +27,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
 void free_dlistint(dlistint_t *head);
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);
 int sum_dlistint(dlistint_t *head);
+int recursive_sum(dlistint_t *node, int sum);
 size_t print_dlistint_backward(const dlistint_t *h);
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
 
