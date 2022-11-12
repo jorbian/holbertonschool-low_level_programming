@@ -11,11 +11,6 @@ int recursive_sum(dlistint_t *node, int sum)
 {
 	int new_sum = (node->n + sum);
 
-	if (!node)
-	{
-		return (0);
-	}
-
 	if (!(node->next))
 		return (new_sum);
 
@@ -30,5 +25,8 @@ int recursive_sum(dlistint_t *node, int sum)
 */
 int sum_dlistint(dlistint_t *head)
 {
-	return (recursive_sum(head, 0));
+	if (head)
+		return (recursive_sum(head, 0));
+	else
+		return (0);
 }
