@@ -7,10 +7,10 @@
  * 
  * Return: the card we wanted
 */
-card *get_dnodeint_at_index(card *head, unsigned int index)
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	unsigned int i = 0;
-	card *current_node = head;
+	dlistint_t *current_node = head;
 
 	while (current_node && i < index)
 	{
