@@ -11,7 +11,7 @@ dlistint_t *find_tail(dlistint_t *h)
 	if (!h->next)
 		return (h);
 	else
-		return(find_tail(h->next));
+		return (find_tail(h->next));
 }
 
 /**
@@ -40,6 +40,9 @@ size_t recurse_backward(dlistint_t *node, size_t length)
 */
 size_t print_dlistint_backward(dlistint_t *h)
 {
+	if (!h)
+		return (-1);
+
 	dlistint_t *tail = find_tail(h);
 	size_t length = recurse_backward(tail, 0);
 
