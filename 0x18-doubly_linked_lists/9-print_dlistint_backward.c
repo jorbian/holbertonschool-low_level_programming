@@ -41,7 +41,7 @@ size_t recurse_backward(dlistint_t *node, size_t length)
 size_t print_dlistint_backward(dlistint_t *h)
 {
 	if (!h)
-		return (-1);
+		return (0);
 
 	dlistint_t *tail = find_tail(h);
 	size_t length = recurse_backward(tail, 0);
