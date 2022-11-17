@@ -20,7 +20,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	if (!element)
 		return (NULL);
 
-	while (strcmp(key, elem->key))
+	while (strcmp(key, element->key))
 		element = element->next;
 
 	return (element->value);
