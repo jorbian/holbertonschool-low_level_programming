@@ -23,9 +23,9 @@ void hash_table_print(const hash_table_t *ht)
 			{
 				if (flag)
 					printf(", ");
-				printf("'%s': '%s'", current->key, current->value);
+				printf("'%s': '%s'", current_node->key, current_node->value);
 				flag = 1;
-				current = current->next;
+				current_node = current_node->next;
 			}
 		}
 	}
