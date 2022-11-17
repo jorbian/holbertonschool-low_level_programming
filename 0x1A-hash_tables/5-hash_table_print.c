@@ -14,14 +14,14 @@ void hash_table_print(const hash_table_t *ht)
 	if (!ht)
 		return;
 
-	putchar("{");
+	putchar('{');
 	for (i = 0; i < ht->size; i++)
 	{
 		if (current_node)
 		{
 			while (current_node)
 			{
-				if (flag)
+				if (flag == 1)
 					printf(", ");
 				printf("'%s': '%s'", current_node->key, current_node->value);
 				flag = 1;
@@ -30,7 +30,7 @@ void hash_table_print(const hash_table_t *ht)
 		}
 	}
 	
-	putchar("}");
-	putchar("\x0a");
+	putchar('}');
+	putchar('\x0a');
 }
 
